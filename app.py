@@ -713,7 +713,7 @@ else:
             This application allows you to design your kitchen space by selecting:
             - **Appliances**: Choose from various kitchen appliances
             - **Plumbing Fixtures**: Select plumbing fixtures like sinks
-            - **Cabinets**: Select cabinet types (roof/base/tall)
+            - **Cabinets**: Select cabinet types (wall/base/tall)
             - **Worktops**: Pick your preferred worktop material
             
             Click **Build** to generate your design!
@@ -848,7 +848,7 @@ else:
             st.markdown("Select cabinet types:")
             
             cabinet_options = {
-                "Roof Cabinet": "roof",
+                "Wall Cabinet": "roof",
                 "Base Cabinet": "base",
                 "Tall Cabinet": "tall"
             }
@@ -856,7 +856,7 @@ else:
             selected_cabinet_labels = st.multiselect(
                 "Choose cabinet types:",
                 options=list(cabinet_options.keys()),
-                default=["Roof Cabinet", "Base Cabinet", "Tall Cabinet"],
+                default=["Wall Cabinet", "Base Cabinet", "Tall Cabinet"],
                 label_visibility="collapsed"
             )
             
@@ -868,7 +868,7 @@ else:
             st.markdown("Choose your worktop material:")
             worktop_material = st.selectbox(
                 "Choose your worktop material:",
-                ["Granite", "Quartz", "Marble", "Wood", "Stainless Steel", "Laminate"],
+                ["Granite"],
                 index=0,
                 label_visibility="collapsed"
             )
@@ -1073,7 +1073,7 @@ if st.session_state.pending_request:
                 
                 1. Open this application (use the same URL you're using now)
                 2. Add `?progress=true&request_id={request_id}` to the end of the URL
-                3. The application will automatically load and display your design
+                3. The application will give you a command to visualize your design in SFx Tool
                 
                 **Example:** If your current URL is `https://cyncly-ui-3mutwu6qv5tpk55tdjsd3r.streamlit.app/`, you would use:
                 `https://cyncly-ui-3mutwu6qv5tpk55tdjsd3r.streamlit.app/?progress=true&request_id={request_id}`
