@@ -1075,8 +1075,8 @@ if st.session_state.pending_request:
                 2. Add `?progress=true&request_id={request_id}` to the end of the URL
                 3. The application will automatically load and display your design
                 
-                **Example:** If your current URL is `https://cyncly-ui-vxunrzzf8qbqb2ltgmsio4.streamlit.app`, you would use:
-                `https://cyncly-ui-vxunrzzf8qbqb2ltgmsio4.streamlit.app?progress=true&request_id={request_id}`
+                **Example:** If your current URL is `https://cyncly-ui-3mutwu6qv5tpk55tdjsd3r.streamlit.app/`, you would use:
+                `https://cyncly-ui-3mutwu6qv5tpk55tdjsd3r.streamlit.app/?progress=true&request_id={request_id}`
                 """)
                 
                 # Note: The "Open Progress Page" button is shown in the "Redisplay" section
