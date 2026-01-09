@@ -951,7 +951,7 @@ else:
                     
                     1. Open this application (use the same URL you're using now)
                     2. Add `?progress=true&request_id={request_id}` to the end of the URL
-                    3. The application will automatically load and display your design
+                    3. The application will give you a command to visualize your design in SFx Tool
                     
                     **Example:** If your current URL is `https://cyncly-ui-vxunrzzf8qbqb2ltgmsio4.streamlit.app`, you would use:
                     `https://cyncly-ui-vxunrzzf8qbqb2ltgmsio4.streamlit.app?progress=true&request_id={request_id}`
